@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<html>
+    <title>Training Wheels</title>
+    <head>
+        <!-- Latest compiled and minified CSS (bootstrap) -->
+        <link rel="stylesheet" 
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+              integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+              crossorigin="anonymous">
+        <!-- Optional theme (bootstrap) -->
+        <link rel="stylesheet" 
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" 
+              integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" 
+              crossorigin="anonymous">
+        <!-- font family -->
+        <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+        <!-- icons -->
+        <script src="https://use.fontawesome.com/d698b613d1.js"></script>
+        <!-- processing code -->
+        <script type="text/javascript" src="processing.min.js"></script>
+    </head>
+    <body>
+        <!-- PAGE HEADER -->
+        <div class="page-header">
+            <h2>Digital Literacy Project</h2>
+            <h1>Training Wheels</h1>
+            <h4>All Hackers Start Somewhere</h4>
+            <h3>Hailey James</h3>
+        </div>
+        <!-- INSTRUCTIONS -->
+        <div>
+            <p id="readme">Drag text into the editor and press run!</p>
+        </div>
+        <div class="container-fluid">     
+            <div class="row">
+                <div class = "col-xs-6">
+                    <!-- BUTTON MENU -->
+                    <div id="buttonMenu">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation"><a class="active" href="#basic" role="tab" data-toggle="tab">Basic</a></li>
+                            <li role="presentation"><a href="#more" role="tab" data-toggle="tab">More</a></li>
+                            <li role="presentation"><a href="#advanced" role="tab" data-toggle="tab">Advanced</a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active menuWidth" id="basic"></div>
+                            <div role="tabpanel" class="tab-pane menuWidth" id="more">
+                                <div class="codeCol" class="codecol" id="moreOne"></div>
+                                <div class="codeCol" class="codecol" id="moreTwo"></div>
+                                <div class="codeCol" class="codecol" id="moreThree"></div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane menuWidth" id="advanced">
+                                <!-- Nav tabs (advanced menu) -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation"><a style="padding:0;" class="active"href="#shapes" role="tab" data-toggle="tab">
+                                        <i class="fa fa-circle" aria-hidden="true"></i>
+                                        </a></li>
+                                    <li role="presentation"><a style="padding:0;" href="#complexShapes" role="tab" data-toggle="tab">
+                                        <i class="fa fa-moon-o" aria-hidden="true">
+                                        </i>
+                                        </a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a style="padding:0;" href="#colors" role="tab" data-toggle="tab">
+                                            <i class="fa fa-paint-brush" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a style="padding:0;" href="#text" role="tab" data-toggle="tab">
+                                            <i class="fa fa-text-width" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li role="presentation"><a style="padding:0;" href="#transform" role="tab" data-toggle="tab">
+                                        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li role="presentation"><a style="padding:0;" href="#environment" role="tab" data-toggle="tab">
+                                        <i class="fa fa-arrows" aria-hidden="true"></i>
+                                        </a></li>
+                                    <li role="presentation"><a style="padding:0;" href="#mouse" role="tab" data-toggle="tab">
+                                        <i class="fa fa-mouse-pointer" aria-hidden="true"></i>
+                                        </a></li>
+                                    <li role="presentation"><a style="padding:0;" href="#keyboard" role="tab" data-toggle="tab">
+                                        <i class="fa fa-keyboard-o" aria-hidden="true"></i>
+                                        </a></li>
+                                    <li role="presentation"><a style="padding:0;" href="#math" role="tab" data-toggle="tab">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                        </a></li>
+                                    <li role="presentation"><a style="padding:0;" href="#trigonometry" role="tab" data-toggle="tab">
+                                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li role="presentation"><a style="padding:0;" href="#dateTime" role="tab" data-toggle="tab">
+                                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                        </a></li>
+                                    <li role="presentation"><a style="padding:0;" href="#debugging" role="tab" data-toggle="tab">
+                                        <i class="fa fa-bug" aria-hidden="true"></i>
+                                        </a></li>
+                                    <li role="presentation"><a style="padding:0;" href="#javascript" role="tab" data-toggle="tab">
+                                        <i class="fa fa-code" aria-hidden="true"></i>
+                                        </a></li>
+                                </ul>
+
+                                <!-- Tab panes (advanced menu) -->
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane active" id="shapes">
+                                        <div class="codeCol" id="shapes1"></div>
+                                        <div class="codeCol" id="shapes2"></div>
+                                        <div class="codeCol" id="shapes3"></div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="complexShapes">
+                                        <div style="float: left; width:150px" id="complexShapes1"></div>
+                                        <div style="float: left; width:150px" id="complexShapes2"></div>
+                                        <div style="float: left; width:150px" id="complexShapes3"></div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="colors">
+                                        <div class="codeCol" id="colors1"></div>
+                                        <div class="codeCol" id="colors2"></div>
+                                        <div class="codeCol" id="colors3"></div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="text">
+                                        <div class="codeCol" id="text1"></div>
+                                        <div class="codeCol" id="text2"></div>
+                                        <div class="codeCol" id="text3"></div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="transform">
+                                        <div class="codeCol" id="transform1"></div>
+                                        <div class="codeCol" id="transform2"></div>
+                                        <div class="codeCol" id="transform3"></div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="environment">
+                                        <div class="codeCol" id="environment1"></div>
+                                        <div class="codeCol" id="environment2"></div>
+                                        <div class="codeCol" id="environment3"></div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="mouse">
+                                        <div class="codeCol" id="mouse1"></div>
+                                        <div class="codeCol" id="mouse2"></div>
+                                        <div class="codeCol" id="mouse3"></div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="keyboard">
+                                        <div class="codeCol" id="keyboard1"></div>
+                                        <div class="codeCol" id="keyboard2"></div>
+                                        <div class="codeCol" id="keyboard3"></div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="math">
+                                        <div class="codeCol" id="math1"></div>
+                                        <div class="codeCol" id="math2"></div>
+                                        <div class="codeCol" id="math3"></div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="trigonometry">
+                                        <div class="codeCol" id="trigonometry1"></div>
+                                        <div class="codeCol" id="trigonometry2"></div>
+                                        <div class="codeCol" id="trigonometry3"></div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="dateTime">
+                                        <div class="codeCol" id="dateTime1"></div>
+                                        <div class="codeCol" id="dateTime2"></div>
+                                        <div class="codeCol" id="dateTime3"></div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="debugging">
+                                        <div class="codeCol" id="debugging1"></div>
+                                        <div class="codeCol" id="debugging2"></div>
+                                        <div class="codeCol" id="debugging3"></div>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane" id="javascript">
+                                        <div class="codeCol" id="javascript1"></div>
+                                        <div class="codeCol" id="javascript2"></div>
+                                        <div class="codeCol" id="javascript3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                    <!-- EDITOR -->
+                    <div id="editorDiv">
+                        <br/>
+                        <div id="editor" contenteditable="true">
+                            <br/><br/>
+                        </div>
+                        <button id="run">Run</button>
+                        <button id="try">Try A Project</button>
+                    </div>
+                </div>
+                <!-- CANVAS -->
+                <div class="col-xs-6" id="canvascontainer">
+                    <script type="text/processing" id="script">
+                void setup() {
+                    size(400, 400); 
+                }
+                console.log('done');
+                    </script>
+                    <canvas></canvas>
+                </div>
+                <div id="cakeInstructions">
+                    <p>Use shapes to decorate the cake!</p>
+                    <button id="solution">See Solution</button>
+                </div>
+                <!--<div id="mylog"><p>Error messages will display here</p></div>-->
+                <div id="mylog"><p><a href="https://www.khanacademy.org/computer-programming/new/pjs">Khan Academy Processing Documentation</a></p></div>
+            </div> 
+        </div>
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="wheels.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="wheels.css">
+    </body>
+</html>

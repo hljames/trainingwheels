@@ -1,0 +1,134 @@
+p{
+    color:white;
+}
+#editorDiv{
+    background-color: #b4b2b2;
+    text-align: center;
+}
+
+#editor{
+    background-color: white;
+    text-align: left;
+    margin-left: 10px; 
+    margin-right: 10px;
+    vertical-align: top;
+    height: 200px;
+    overflow: auto;
+}
+
+#buttonMenu{
+    background-color: lightpink;
+    text-align: center;
+}
+
+h1 {
+    font-weight: bold;
+    color: lightpink;
+    text-align:center;
+    border:none;
+
+}
+h1, h2, h3 {
+    border:none;
+    margin:0px;
+    padding:0;
+    
+}
+.page-header {
+    background-color: black;
+    border:0;
+    margin:0;
+    padding:5px;
+    text-align: left;
+    border-bottom: solid white;
+}
+h2 {
+    color:white;
+    font-size: 20px;
+}
+h3 {
+    color: white;
+    text-align: right;
+}
+&::before {
+    display: block;
+}
+
+html, body {
+    padding:0;
+    margin:0;
+}
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+#canvascontainer {
+    text-align:center;
+    margin:0px;
+    padding:0;
+}
+
+.nav-tabs > li {
+    float:none;
+    display:inline-block;
+    zoom:1;
+}
+a {
+    color:#033333;
+}
+
+.nav-tabs {
+    text-align:center;
+}
+body {
+    background-color: #033333;
+}
+
+div.bottom {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: none;
+    margin-bottom: none;
+}
+.tab-pane {
+    text-align: left;
+    margin-left: 5px;
+    width: 100%;
+    vertical-align: top;
+}
+.menuWidth {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.codeCol {
+    display: inline-block; 
+    width:210px; 
+    vertical-align: top;
+}
+button {
+    margin: 10px;
+}
+#run {
+    float: right;
+    margin-right: 10px;
+}
+#cakeInstructions {
+    margin: 10px;
+    padding-left: 100px;
+    display: none;
+}
+#solution {
+    display:none;
+}
+#readme {
+    margin: 10px;
+}
+a {
+    color:white;
+    padding: 10px;
+}
+h4 {
+    color:white;
+    text-align: center;
+    color:lightgrey;
+}

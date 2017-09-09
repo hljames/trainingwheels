@@ -1,0 +1,19 @@
+One of the core pieces of my design is the buttons objects, the objects that contains all the common pieces of 
+processings code keyed by category. I thought about hard coding in the block menus, but I realized that it would
+be difficult to change or update which pieces of code the teacher wanted in the menu. This way, it's easy to 
+customize Training Wheels to a particular lesson or even a particular student. I accomplished this with several
+nested for loops, moving to a new column every six blocks in the advanced panel. 
+
+Changing the variables to numbers upon being placed in the editor was also a significant design decision. 
+Some students might lose interest or become frustrated if they have to understand and replace variables 
+the first time they want to run a piece of code, but I also wanted to conserve a kind of 'template' for the code
+so the students would know what the variables represent. 
+
+I split the advanced menu into a horizontally scrolling tabbed menu to most concisely fit all the buttons. I
+used icons instead of category labels for space purposes and to limit the amount of text on the screen. 
+
+I included an exercise (decorating a cake) for practice, as well as the solution code. The buttons have click
+handlers that trigger events like showing more content on the page. 
+
+I also use regular expressions to parse the html in the editor before I run the code on the canvas, and prepend
+the code with a block to keep the canvas a constant size (otherwise it defaults to 100x100). 
